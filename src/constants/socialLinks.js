@@ -34,6 +34,8 @@ const data = [
     url: "https://www.twitter.com",
   },
 ]
+
+// Iterate over above and turn it into a list item
 const links = data.map(link => {
   return (
     <li key={link.id}>
@@ -44,6 +46,7 @@ const links = data.map(link => {
   )
 })
 
+// Put the list items in a list; leaving an option to pass in additional styling
 export default ({ styleClass }) => {
   return (
     <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>
