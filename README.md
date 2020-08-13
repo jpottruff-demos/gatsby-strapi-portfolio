@@ -1,4 +1,6 @@
-# Overview 
+# Gatsby-Strapi Portfolio
+
+## Overview 
 Personal portfolio project made following John Smilga's [tutorial](https://www.youtube.com/watch?v=Oc_ITwxiG-Y&feature=youtu.be) found on the freecodecamp [youtube channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
 
 **This project uses**
