@@ -1,36 +1,31 @@
-## Setup Notes
+# Overview 
+Personal portfolio project made following John Smilga's [tutorial](https://www.youtube.com/watch?v=Oc_ITwxiG-Y&feature=youtu.be) found on the freecodecamp [youtube channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
 
-1. All components ready to go (including imports)
-2. Use main.css - less imports
-3. Limit amount of components - better overview
-4. React Icons
+**This project uses**
+- [React](https://reactjs.org/) 
+- [GraphQL](https://graphql.org/)
+- [GatsbyJS](https://www.gatsbyjs.org/) *(static stie generator)*
+- [Strapi](https://strapi.io/) *(headless CMS)*
 
-[react icons] :https://react-icons.github.io/react-icons/
+**Libraries / Plugins**
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Gastby Source Strapi](https://www.gatsbyjs.org/packages/gatsby-source-strapi/?=strapi) *(for accesing strapi data via gatsby)* 
 
-```javascript
-import { FaHome } from "react-icons/fa"
-const Component = () => {
-  return <FaHome className="icon"></FaHome>
-}
-```
+**Other Junk**
+- [Hipster Ipsum](https://hipsum.co/) *(dummy text)*
 
-5. Use constants to avoid repetition.
-6. In order to follow along with the video use my backend (url below)
+## Development
+### Front End
+For a dev server run: `gatsby develop`
 
-   [strapi backend]:https://github.com/john-smilga/strapi-gatsby-porfolio-2020-api
+- Gatsby Site: http://localhost:8000
 
-7. Make sure such content-types exist in your Strapi application. Or replace/delete them in gatsby-config.js
+- Graph*i*QL: http://localhost:8000/___graphql
 
-```javascript
-{
-      resolve: `gatsby-source-strapi`,
-      options: {
-        apiURL: `http://localhost:1337`,
-        queryLimit: 1000, // Default to 100
-        // contentTypes: [`jobs`, `projects`, `blogs`, ],
-        //singleTypes:[`about` ]
-        contentTypes: [`jobs`, `projects`, `blogs`],
-        singleTypes: [`about`],
-      },
-    },
-```
+### Back End
+
+For Strapi Development run: `npm run develop`
+
+- Server: http://localhost:1337/
+
+- Admin: http://localhost:1337/admin/
