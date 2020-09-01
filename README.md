@@ -35,3 +35,7 @@ For Strapi Development run: `npm run develop`
 - Server: http://localhost:1337/
 
 - Admin: http://localhost:1337/admin/
+
+To connect Strapi to Cloudinary, rename `settings-placeholder.json` to `settings.json` and replace variables as needed
+- file is found in `extensions/upload/config/` in the api portion of the project
+- also see: *[strapi-provider-upload-cloudinary](https://www.npmjs.com/package/strapi-provider-upload-cloudinary)* 
