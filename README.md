@@ -15,12 +15,14 @@ Personal portfolio project made following John Smilga's [tutorial](https://www.y
 - [Gatsby Node APIs](https://www.gatsbyjs.com/docs/node-apis/) *([createPages](https://www.gatsbyjs.com/docs/node-apis/#createPages) - to create blog page templates)*
 - [React Markdown](https://www.npmjs.com/package/react-markdown) *(markdown rendering for blog posts)*
 - [Strapi Provider Upload Cloudinary](https://www.npmjs.com/package/strapi-provider-upload-cloudinary) *(connects strapi to cloudinary image store)*
+- [Gatsby Plugin Prefetch Google Fonts](https://www.gatsbyjs.com/plugins/gatsby-plugin-prefetch-google-fonts/) *(speeds up loading time on fonts; alternate to placing in `head` or importing into `main.css`)*
 
 **Other Junk**
 - [Hipster Ipsum](https://hipsum.co/) *(dummy text)*
 - [Cloudinary](https://cloudinary.com/) *(image storage for production)*
 - [Form Spree](https://formspree.io/) *(form gathering data from contact form)*
     - *alternatively - you could replace this with [Netlify Forms](https://www.netlify.com/products/forms/) if that's where you end up deploying*
+- [Netlify](https://www.netlify.com/) *(for Deployment)*
 
 ## Development
 ### Front End
@@ -45,3 +47,17 @@ Admin: http://localhost:1337/admin/
 To connect Strapi to Cloudinary, rename `settings-placeholder.json` to `settings.json` and replace variables as needed
 - file is found in `extensions/upload/config/` in the api portion of the project
 - also see *[strapi-provider-upload-cloudinary](https://www.npmjs.com/package/strapi-provider-upload-cloudinary)* 
+
+
+## Builds
+
+### Builds
+
+### Build Notes 
+Deploying Static Site on *Netlify* using drag and drop option *(not Continuous Deployment)*
+
+**Why?**
+Avoids the need to host *Strapi* elsewhere. *Strapi* component in this case is local.
+
+**Alternatively**
+Host the *Strapi* componenet elsewhere and change the `apiURL` in `gatsby-config`
