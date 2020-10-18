@@ -16,6 +16,7 @@ Personal portfolio project made following John Smilga's [tutorial](https://www.y
 - [React Markdown](https://www.npmjs.com/package/react-markdown) *(markdown rendering for blog posts)*
 - [Strapi Provider Upload Cloudinary](https://www.npmjs.com/package/strapi-provider-upload-cloudinary) *(connects strapi to cloudinary image store)*
 - [Gatsby Plugin Prefetch Google Fonts](https://www.gatsbyjs.com/plugins/gatsby-plugin-prefetch-google-fonts/) *(speeds up loading time on fonts; alternate to placing in `head` or importing into `main.css`)*
+- [Gatsby Plugin React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/) *(for SEO / adding `<head>`/ `<meta>` elements to pages)*
 
 **Other Junk**
 - [Hipster Ipsum](https://hipsum.co/) *(dummy text)*
@@ -51,7 +52,17 @@ To connect Strapi to Cloudinary, rename `settings-placeholder.json` to `settings
 
 ## Builds
 
-### Builds
+### Local Builds / Netlify Deploy
+1. **Make sure** your local *Strapi* server is running 
+    
+    In the *Strapi* project folder: `npm run develop`
+
+1. Clear your cache and build the site
+
+    In the *Gatsby* project folder: `gatsby clean && gatsby build`
+
+1. Drag and drop the `public` folder from your *Gatsby* project into *Netlify* 
+
 
 ### Build Notes 
 Deploying Static Site on *Netlify* using drag and drop option *(not Continuous Deployment)*
