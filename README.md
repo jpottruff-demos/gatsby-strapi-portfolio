@@ -3,6 +3,8 @@
 ## Overview 
 Personal portfolio project made following John Smilga's [tutorial](https://www.youtube.com/watch?v=Oc_ITwxiG-Y&feature=youtu.be) found on the freecodecamp [youtube channel](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ)
 
+The final build can be seen at *https://gatsby-strapi-portfolio-test.netlify.app/*
+
 **This project uses**
 - [React](https://reactjs.org/) 
 - [GraphQL](https://graphql.org/)
@@ -17,6 +19,7 @@ Personal portfolio project made following John Smilga's [tutorial](https://www.y
 - [Strapi Provider Upload Cloudinary](https://www.npmjs.com/package/strapi-provider-upload-cloudinary) *(connects strapi to cloudinary image store)*
 - [Gatsby Plugin Prefetch Google Fonts](https://www.gatsbyjs.com/plugins/gatsby-plugin-prefetch-google-fonts/) *(speeds up loading time on fonts; alternate to placing in `head` or importing into `main.css`)*
 - [Gatsby Plugin React Helmet](https://www.gatsbyjs.com/plugins/gatsby-plugin-react-helmet/) *(for SEO / adding `<head>`/ `<meta>` elements to pages)*
+- [Gatsby Plugin Sitemap](https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap/) *(generates a site map for SEO purposes - mimimal configuration used here)*
 
 **Other Junk**
 - [Hipster Ipsum](https://hipsum.co/) *(dummy text)*
